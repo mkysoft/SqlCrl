@@ -10,11 +10,11 @@ SELECT master.dbo.Unzip(MyVarBinary) FROM MyTable;
 SELECT CAST(master.dbo.Unzip(MyVarBinary) as Xml) FROM MyTable;
 ```
 ## Installation
-I prefer install this dll to master because of accesing in any db.
+I prefer install this dll to master db because of accesing in any db.
 ### Loading Dll
-Load SqlCrl.dll to SQL Server db from Programmablty > Assemblies
+Load SqlCrl.dll to SQL Server db from Programmability > Assemblies
 ### Enabling Function
-Run below command in master or whenever db.
+Run below command in master.
 ```sql
 CREATE FUNCTION Unzip(@Input varbinary(max)) RETURNS varbinary(max)
 AS EXTERNAL NAME [SqlCrl].[Zip].Unzip;
