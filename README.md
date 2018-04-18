@@ -19,3 +19,5 @@ AS EXTERNAL NAME [SqlCrl].[Zip].Unzip;
 sp_configure 'clr enabled', 1;
 RECONFIGURE
 ```
+## Thanks
+Jaime Olivares for ZipStorer http://github.com/jaime-olivares/zipstorer
