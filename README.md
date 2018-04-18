@@ -4,6 +4,11 @@ Some functions for Microsoft SQL Server
 | Function  | Description |
 | ------------- | ------------- |
 | Unzip  | Unzip binary data |
+### Unzip
+```sql
+SELECT master.dbo.Unzip(MyVarBinary) FROM MyTable;
+SELECT CAST(master.dbo.Unzip(MyVarBinary) as Xml) FROM MyTable;
+```
 ## Installation
 I prefer install this dll to master because of accesing in any db.
 ### Loading Dll
